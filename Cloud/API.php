@@ -18,7 +18,7 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-require_once 'Exception.php';
+require_once dirname(__FILE__) . '/Exception.php';
 
 // Type definitions
 define('CLOUD_API_TYPE_ALL',      null);

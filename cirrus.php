@@ -1,14 +1,14 @@
 <?php
 /*
  * Plugin Name: Cirrus
- * Plugin URI: http://mattkirman.com
+ * Plugin URI: https://github.com/mattkirman/cirrus
  * Description: CloudApp powered WordPress shortlinks.
  * Author: Matt Kirman
- * Version: 0.0.1
+ * Version: 0.0.2
  * Author URI: http://mattkirman.com
  */
-require_once 'Cloud/API.php';
-require_once 'settings.php';
+require_once dirname(__FILE__) . '/Cloud/API.php';
+require_once dirname(__FILE__) . '/settings.php';
 
 add_filter('get_shortlink', array('Cirrus', 'get_shortlink'), 1, 4);
 add_action('publish_post', array('Cirrus', 'set_shortlink'), 1, 1);
